@@ -51,7 +51,8 @@ let watch = () => {
         }
     });
     gulp.watch('./src/**/*.pug', html),
-    gulp.watch('./src/**/*.styl', css)
+    gulp.watch('./src/**/*.styl', css),
+    gulp.watch('./src/**/*.js', javaScript
 };
 
 let clean = () => {
