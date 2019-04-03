@@ -1,7 +1,6 @@
 $('.mobile').click(function () {
     $('.nav-wrap').toggleClass('active');
 });
-
 const slider = document.getElementsByClassName('slider-item');
 let sliderCount = 1;
 const sliderChange = () => {
@@ -16,4 +15,4 @@ const sliderChange = () => {
         sliderCount = 1;
     }
 }
-setInterval(sliderChange,5000)
+setInterval(sliderChange,5000);
