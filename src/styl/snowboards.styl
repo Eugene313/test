@@ -28,25 +28,36 @@
     .row
         position relative
         max-width 1200px
-        padding: 50px 15px
+        height 500px
+        padding: 50px 0
         margin: 0 auto
         display: flex
         justify-content: center
         align-items: center
         color: #bfbfbf
         overflow: hidden
-        .snowboards-item
-            padding: 0 100px
-            opacity: 0.5
         #next
             position: absolute
             right: 0
             font-size: 180px
             cursor: pointer
-        #previus
+            z-index: 10
+        #prev
             position: absolute
             left: 0
             font-size: 180px
             cursor: pointer
-        .active
-            opacity: 1
+            z-index: 10
+        .wrap
+            position: absolute
+            left: 0
+            display: flex
+            align-items: center
+            transition: 0.5s
+            .snowboards-item
+                width 200px
+                padding: 0 100px
+                opacity: 0.5
+                transition: 1s all
+            .active
+                opacity: 1
