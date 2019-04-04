@@ -16,3 +16,4 @@ const sliderChange = () => {
     }
 }
 setInterval(sliderChange,5000);
+

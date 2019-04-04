@@ -1,10 +1,16 @@
 .company
     background: url(../img/company-bg.png) no-repeat
     background-size: cover
-    background-position: center center
+    background-position: right 
     width: 100%
     height: 1200px
     color: #ffffff
+    @media (max-width: 500px)
+        background: none
+        color: #000000
+        height 500px
+        @media(max-width:500px)
+            height 200px
     .row
         max-width 1200px
         height 100%
@@ -19,7 +25,14 @@
             text-transform: uppercase
             &:nth-child(2)
                 margin-bottom: 50px
+            @media (max-width:500px)
+                font-size: 28px
+                text-align: center
+                margin-bottom: 0
         p
             max-width: 600px
             font-size: 15px
             line-height: 30px
+            &:nth-child(4)
+                @media(max-width: 500px)
+                    display: none

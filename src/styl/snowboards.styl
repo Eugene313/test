@@ -1,0 +1,52 @@
+.snowboards
+    width: 100%
+    height 100%
+    text-align: center
+    padding: 100px 0
+    h2
+        text-transform: uppercase
+        font-size: 48px
+    p
+        font-size: 14px
+        text-transform: uppercase
+        &:nth-child(5)
+            font-size: 24px
+    .time
+        position relative
+        padding: 30px 0
+        display: flex;
+        justify-content: center;
+        span
+            position: absolute
+            content: ''
+            background: #000000
+            padding: 1px 20px
+            display: inline-block
+            transform: rotateZ(-45deg)
+            &:nth-child(2)
+                transform: rotateZ(45deg)
+    .row
+        position relative
+        max-width 1200px
+        padding: 50px 15px
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #bfbfbf
+        overflow: hidden
+        .snowboards-item
+            padding: 0 100px
+            opacity: 0.5
+        #next
+            position: absolute
+            right: 0
+            font-size: 180px
+            cursor: pointer
+        #previus
+            position: absolute
+            left: 0
+            font-size: 180px
+            cursor: pointer
+        .active
+            opacity: 1
