@@ -29,7 +29,7 @@ const next = $('#next').click(function(){
     if (sliderIndex < sliderItem.length-1) {
         $(sliderItem).removeClass('active')
         $('.wrap').css({
-            'left': (curentPosition -= 400)+'px'
+            'left': (curentPosition -= 370)+'px'
         })
         sliderIndex++
         $(sliderItem[sliderIndex]).addClass('active')
@@ -49,7 +49,7 @@ const prev = $('#prev').click(function(){
     if (sliderIndex > 0) {
         $(sliderItem).removeClass('active')
         $('.wrap').css({
-            'left': (curentPosition += 400)+'px'
+            'left': (curentPosition += 370)+'px'
         })
         sliderIndex--
         $(sliderItem[sliderIndex]).addClass('active')

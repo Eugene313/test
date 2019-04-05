@@ -1,57 +1,73 @@
 .snowboards
     width: 100%
-    height 100%
+    height 1120px
     text-align: center
-    padding: 100px 0
+    padding: 150px 0 200px
+    position: relative
     h2
         text-transform: uppercase
         font-size: 48px
+        font-weight: 300
+        margin: 0
+        padding-bottom: 40px
     p
         font-size: 14px
         text-transform: uppercase
-        &:nth-child(5)
-            font-size: 24px
+    h3
+        font-size: 24px
+        text-transform: uppercase
+        font-weight: 300
+        padding: 50px 0
     .time
         position relative
         padding: 30px 0
         display: flex;
-        justify-content: center;
+        justify-content: center
+        margin-top: 20px
+        margin-bottom: 120px
         span
             position: absolute
             content: ''
             background: #000000
-            padding: 1px 20px
+            padding: 2px 20px
             display: inline-block
             transform: rotateZ(-45deg)
             &:nth-child(2)
                 transform: rotateZ(45deg)
+    .button-wrap
+        position: relative
+        max-width: 1400px
+        margin: 0 auto
+        z-index 10
+        #next
+            position: absolute
+            right: 10px
+            font-size: 180px
+            cursor: pointer
+            padding-top: 100px
+            z-index: 10
+            @media (max-width 500px)
+                font-size: 80px
+        #prev
+            position: absolute
+            left: 10px
+            font-size: 180px
+            cursor: pointer
+            padding-top: 100px
+            z-index: 10
+            @media (max-width 500px)
+                font-size: 80px
     .row
         position relative
-        max-width 1200px
-        height 500px
-        padding: 50px 0
+        max-width 960px
+        height 410px
+        // padding: 50px 0
         margin: 0 auto
         display: flex
         justify-content: center
         align-items: center
         color: #bfbfbf
         overflow: hidden
-        #next
-            position: absolute
-            right: 0
-            font-size: 180px
-            cursor: pointer
-            z-index: 10
-            @media (max-width 500px)
-                font-size: 80px
-        #prev
-            position: absolute
-            left: 0
-            font-size: 180px
-            cursor: pointer
-            z-index: 10
-            @media (max-width 500px)
-                font-size: 80px
         .wrap
             position: relative
             left: 0
@@ -59,9 +75,9 @@
             align-items: center
             transition: 0.5s
             .snowboards-item
-                width 200px
                 padding: 0 100px
                 opacity: 0.5
                 transition: 1s all
+                box-sizing: content-box
             .active
                 opacity: 1
