@@ -8,6 +8,11 @@
         background-size: cover
         background-position: right bottom
         padding: 120px 15px
+    @media (max-width:640px)
+        background: none
+        max-height: 450px
+        color: #000000
+        padding: 15px 
     .row
         max-width 960px
         height 100%
@@ -22,6 +27,11 @@
             text-transform: uppercase
             &:nth-child(2)
                 margin-bottom: 50px
+                @media (max-width:640px)
+                    margin: 0
+            @media (max-width:640px)
+                font-size: 28px
+                text-align: center
         p
             max-width: 600px
             font-size: 15px
@@ -31,3 +41,5 @@
             &:nth-child(6)
                 @media(max-width: 770px)
                     display: none
+            @media (max-width:640px)
+                padding: 10px 0

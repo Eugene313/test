@@ -20,6 +20,9 @@ header
             z-index 10
             .logo
                 padding: 0 30px
+                img
+                    @media (max-width: 640px)
+                        width: 50px
             .nav-wrap
                 display: flex
                 justify-content: center
@@ -60,9 +63,11 @@ header
             padding: 0 10px
             i
                 padding: 0 20px
+                @media (max-width:640px)
+                    padding: 0 10px
             @media (max-width: 750px)
                 width: 100%
-                justify-content: space-between        
+                justify-content: space-between                  
             .mobile
                 display: none
                 cursor: pointer
