@@ -10,7 +10,7 @@ const browserSync = require('browser-sync').create();
 let html = () => {
     return gulp.src('./src/index.pug')
         .pipe(pug('all.pug'))
-        .pipe(gulp.dest('./dist/'))
+        .pipe(gulp.dest('./'))
         .pipe(browserSync.stream());
 };
 
@@ -24,24 +24,24 @@ let css = () => {
         .pipe(cleanCSS({
             level: 2
         }))
-        .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.dest('./assets/css'))
         .pipe(browserSync.stream());
 };
 
 let javaScript = () => {
     return gulp.src('./src/js/**/*')
-            .pipe(gulp.dest('./dist/js/'))
+            .pipe(gulp.dest('./assets/js/'))
             .pipe(browserSync.stream());
 };
 
 let image = () => {
     return gulp.src('./src/img/**/*')
-            .pipe(gulp.dest('./dist/img/'));
+            .pipe(gulp.dest('./assets/img/'));
 };
 
 let fonts = () => {
     return gulp.src('./src/fonts/**/*')
-            .pipe(gulp.dest('./dist/fonts/'));
+            .pipe(gulp.dest('./assets/fonts/'));
 };
 
 let watch = () => {
