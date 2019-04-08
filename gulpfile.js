@@ -47,7 +47,7 @@ let fonts = () => {
 let watch = () => {
     browserSync.init({
         server: {
-            baseDir: "./dist"
+            baseDir: "./assets"
         }
     });
     gulp.watch('./src/**/*.pug', html),
