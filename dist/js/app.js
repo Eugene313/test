@@ -1,6 +1,12 @@
 $('.mobile').click(function () {
     $('.nav-wrap').toggleClass('active');
 });
+window.onscroll = function (){
+    if (window.pageYOffset > 200){
+        $('.nav-wrap').removeClass('active');
+    }
+
+}
 const slider = document.getElementsByClassName('slider-item');
 let sliderCount = 1;
 const sliderChange = () => {
