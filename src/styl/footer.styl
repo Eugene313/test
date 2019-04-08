@@ -5,7 +5,7 @@ footer
     @media (max-width:770px)
         padding: 73px 30px
     @media (max-width:640px)
-        padding: 30px 22px
+        padding: 15px
     .row
         max-width 960px
         margin: 0 auto
@@ -36,7 +36,7 @@ footer
                     color: #028aff
             &:nth-child(1)
                 @media (max-width:640px)
-                    width: 50%
+                    width: 40%
                     padding: 5px 0
             &:nth-child(2)
                 @media (max-width:640px)
@@ -49,7 +49,12 @@ footer
                     flex-wrap: wrap
                 a
                    @media (max-width:640px)
-                       width: 40% 
+                       width: 40%
+                    &:nth-child(3)
+                        width: 60%
+                    &:last-child
+                        @media (max-width:640px)
+                            width: 100%
             .form-wrap
                 form
                     display: flex
