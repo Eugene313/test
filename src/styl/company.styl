@@ -4,12 +4,10 @@
     width: 100%
     color: #ffffff
     padding: 250px 15px
-    @media (max-width: 500px)
-        background: none
-        color: #000000
-        height 500px
-        @media(max-width:500px)
-            height 200px
+    @media (max-width: 770px)
+        background-size: cover
+        background-position: right bottom
+        padding: 120px 15px
     .row
         max-width 960px
         height 100%
@@ -17,21 +15,19 @@
         display: flex
         flex-direction: column
         justify-content: center
-        padding: 15px
+        padding: 15px 0
         h2
             font-size: 48px
             margin: 0
             text-transform: uppercase
             &:nth-child(2)
                 margin-bottom: 50px
-            @media (max-width:500px)
-                font-size: 28px
-                text-align: center
-                margin-bottom: 0
         p
             max-width: 600px
             font-size: 15px
             line-height: 30px
-            &:nth-child(4)
-                @media(max-width: 500px)
+            @media (max-width:770px)
+                max-width: 350px
+            &:nth-child(6)
+                @media(max-width: 770px)
                     display: none

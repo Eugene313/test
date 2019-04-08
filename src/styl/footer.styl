@@ -1,8 +1,9 @@
 footer
     background: #000000
     width 100%
-    height: 400px
-    padding: 0 15px
+    padding: 0 15px 65px
+    @media (max-width:770px)
+        padding: 73px 30px
     .row
         max-width 960px
         margin: 0 auto
@@ -10,19 +11,18 @@ footer
         justify-content: space-between
         flex-wrap: wrap
         color: #ffffff
-        @media (max-width: 400px)
-            padding: 1px 15px
-            p
-                text-align: center
-                width: 100%
         .footer-col
             display: flex
             flex-direction: column
+            width: 220px
             h2
                 text-transform: uppercase
                 color:#ffffff
                 font-size: 17px
                 padding: 50px 0 20px
+                @media (max-width:770px)
+                    width: 100%
+                    padding: 0 0 25px 0
             a
                 color: #b7b7b7
                 text-decoration: none
@@ -30,24 +30,28 @@ footer
                 font-size: 14px
                 &:hover
                     color: #028aff
-            form
-                display: flex
-                width: 220px;
-                input
-                    width: 100%
-                    padding: 10px
-                    font-size: 14px;
-                    color: #b0b0b0
-                button
-                    background: #c7c7c7
-                    border: none
-                    text-transform: uppercase
-                    padding: 10px 20px
-                    font-size: 18px
+            .form-wrap
+                form
+                    display: flex
+                    width: 220px;
+                    input
+                        width: 100%
+                        padding: 10px
+                        font-size: 14px;
+                        color: #b0b0b0
+                    button
+                        background: #c7c7c7
+                        border: none
+                        text-transform: uppercase
+                        padding: 10px 20px
+                        font-size: 18px
+                @media (max-width: 770px)
+                    width: 50%
             .social
                 display: flex
                 width: 100%
                 justify-content: space-between
+                align-items: center
                 padding: 80px 0
                 font-size: 22px
                 i
@@ -56,4 +60,26 @@ footer
                     &:hover
                         transform: rotateZ(45deg)
                         color: #028aff
+                @media (max-width: 770px)
+                    width: 40%
+                    padding: 0
+            &:nth-child(4)
+                @media (max-width:770px)
+                    width: 70%
+                    flex-direction: row
+                    flex-wrap: wrap
+        .region
+            display: flex
+            justify-content: space-between
+            width: 100%
+            @media (max-width:770px)
+                width: 30%
+                flex-direction: column
+                justify-content: flex-end
+                text-align: right
+            p
+                @media (max-width: 770px)
+                    &:nth-child(2)
+                        order: -1
+                        padding-bottom: 10px
 
