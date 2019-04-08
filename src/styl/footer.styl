@@ -26,7 +26,7 @@ footer
                     width: 100%
                     padding: 0 0 25px 0
                 @media (max-width:640px)
-                    padding: 0 0 15px 0
+                    padding: 15px 0 
             a
                 color: #b7b7b7
                 text-decoration: none
@@ -42,6 +42,14 @@ footer
                 @media (max-width:640px)
                     width: 50%
                     padding: 5px 0
+            &:nth-child(3)
+                @media (max-width:640px)
+                    width: 100%
+                    flex-direction: row
+                    flex-wrap: wrap
+                a
+                   @media (max-width:640px)
+                       width: 40% 
             .form-wrap
                 form
                     display: flex
