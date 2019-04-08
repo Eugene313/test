@@ -22,14 +22,14 @@ const sliderItem = $('.snowboards-item')
 let curentPosition = parseInt($('.wrap').css('left'))
 let sliderIndex = 1
 
-const next = $('#next').click(function(){
+const next = function(a){
     $('#prev,#next').css({
         'opacity':'1'
     })
     if (sliderIndex < sliderItem.length-1) {
         $(sliderItem).removeClass('active')
         $('.wrap').css({
-            'left': (curentPosition -= 370)+'px'
+            'left': (curentPosition -= a)+'px'
         })
         sliderIndex++
         $(sliderItem[sliderIndex]).addClass('active')
@@ -40,16 +40,16 @@ const next = $('#next').click(function(){
             'opacity':'0.2'
         })
     }
-});
+}
 
-const prev = $('#prev').click(function(){
+const prev = function(a){
     $('#prev,#next').css({
         'opacity':'1'
     })
     if (sliderIndex > 0) {
         $(sliderItem).removeClass('active')
         $('.wrap').css({
-            'left': (curentPosition += 370)+'px'
+            'left': (curentPosition += a)+'px'
         })
         sliderIndex--
         $(sliderItem[sliderIndex]).addClass('active')
@@ -60,7 +60,19 @@ const prev = $('#prev').click(function(){
             'opacity':'0.2'
         })
     }
-});
-
-
+}
+$('#next').click(function(){
+    if ( window.innerWidth <= 770){
+        next(265)
+    } else {
+        next(370)
+    }
+})
+$('#prev').click(function(){
+    if ( window.innerWidth <= 770){
+        prev(265)
+    } else {
+        prev(370)
+    }
+})
 
