@@ -1,5 +1,5 @@
 footer
-    background: #000000
+    background: $color1
     width 100%
     padding: 0 15px 65px
     @media (max-width:770px)
@@ -12,14 +12,14 @@ footer
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-        color: #ffffff
+        color: $color2
         .footer-col
             display: flex
             flex-direction: column
             width: 220px
             h2
                 text-transform: uppercase
-                color:#ffffff
+                color:$color2
                 font-size: 17px
                 padding: 50px 0 20px
                 @media (max-width:770px)
@@ -28,12 +28,12 @@ footer
                 @media (max-width:640px)
                     padding: 15px 0 
             a
-                color: #b7b7b7
+                color: $color3
                 text-decoration: none
                 padding: 10px 0
                 font-size: 14px
                 &:hover
-                    color: #028aff
+                    color: $color4
             &:nth-child(1)
                 @media (max-width:640px)
                     width: 40%
@@ -63,10 +63,10 @@ footer
                         width: 100%
                         padding: 10px
                         font-size: 14px;
-                        color: #b0b0b0
+                        color: $color3
                         border-radius: 0
                     button
-                        background: #c7c7c7
+                        background: $color3
                         border: none
                         text-transform: uppercase
                         padding: 10px 20px
@@ -89,7 +89,7 @@ footer
                     cursor: pointer
                     &:hover
                         transform: rotateZ(45deg)
-                        color: #028aff
+                        color: $color4
                 @media (max-width: 770px)
                     width: 40%
                     padding: 0
@@ -114,7 +114,7 @@ footer
                 font-size: 0.7rem
                 width: 74px
                 height: 20px
-                color: white
+                color: $color2
                 background-size: cover
                 margin-right: 10px
                 option
