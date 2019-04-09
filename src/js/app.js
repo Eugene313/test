@@ -1,13 +1,13 @@
 $('.mobile').click(function () {
-    $('.nav-wrap').toggleClass('active');
+    $('.nav_wrap').toggleClass('active');
 });
 window.onscroll = function (){
     if (window.pageYOffset > 200){
-        $('.nav-wrap').removeClass('active');
+        $('.nav_wrap').removeClass('active');
     }
 
 }
-const slider = document.getElementsByClassName('slider-item');
+const slider = document.getElementsByClassName('slider_item');
 let sliderCount = 1;
 const sliderChange = () => {
     console.log(1)
@@ -24,7 +24,7 @@ const sliderChange = () => {
 setInterval(sliderChange,5000);
 
 
-const sliderItem = $('.snowboards-item')
+const sliderItem = $('.snowboards_item')
 let curentPosition = parseInt($('.wrap').css('left'))
 let sliderIndex = 1
 
